@@ -143,9 +143,9 @@ const optionTwoPoseTimer = new DurationTimer(500, (extendedFingers) => {
   document.getElementById('open').style.display = 'none'
 })
 
-const optionThreePoseTimer = new DurationTimer(50, (extendedFingers) => {
+const optionThreePoseTimer = new DurationTimer(500, (extendedFingers) => {
   isInCommandMode = false
-  console.log('option3')
+  document.getElementById('team3').innerText = parseInt(document.getElementById('team3').innerText) + 1
   document.getElementById('open').style.display = 'none'
 })
 

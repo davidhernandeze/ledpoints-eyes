@@ -18,6 +18,7 @@ limitations under the License.
   <style>
     body {
       margin: 0;
+      padding: 5rem;
     }
     #stats {
       position: relative;
@@ -97,7 +98,17 @@ limitations under the License.
 
 </head>
 <body>
-  <div id="stats"></div>
+  <p>Instructions: open your hand fully to enter command mode, then use your fingers to signal one two or three.</p>
+  <div class="flex gap-8">
+    <div class="flex items-center">
+      <h1 class="text-4xl">1</h1>
+      <img class="h-[10rem]" src="https://cdn.vectorstock.com/i/1000x1000/13/41/image-of-cartoon-human-hand-gesture-open-palm-vector-22371341.webp" alt="">
+    </div>
+    <div class="flex items-center">
+      <h1 class="text-4xl">2</h1>
+      <img class="h-[10rem]" src="https://cdn.vectorstock.com/i/1000x1000/68/10/set-of-counting-one-two-three-hand-sign-vector-22746810.webp" alt="">
+    </div>
+  </div>
   <div id="main">
     <div class="container hidden">
       <div class="canvas-wrapper">
@@ -131,6 +142,7 @@ limitations under the License.
   <div class="flex w-[30rem] text-center mt-20">
     <div id="team1" class="flex-1 bg-yellow-400 text-white border border-gray-600 text-[4rem]">0</div>
     <div id="team2" class="flex-1 bg-yellow-400 text-white border border-gray-600 text-[4rem]">0</div>
+    <div id="team3" class="flex-1 bg-yellow-400 text-white border border-gray-600 text-[4rem]">0</div>
   </div>
   <div id="open" style="display: none; background-color: green; padding: 2rem; font-size: 2rem; margin: 2rem">Listening</div>
 <div class="loader"></div>
